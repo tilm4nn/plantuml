@@ -1,0 +1,65 @@
+!define CommonBackgroundColor White
+!define CommonBorderColor 454645
+!define CommonFontColor 454645
+
+skinparam BackgroundColor CommonBackgroundColor
+skinparam ArrowColor CommonBorderColor
+skinparam FontColor CommonFontColor
+skinparam shadowing true
+skinparam RoundCorner 7
+
+skinparam useBetaStyle true
+<style>
+  element
+  {
+      FontColor CommonFontColor
+      LineColor CommonBorderColor
+  }
+
+  package, person, artifact, component, cloud, frame, folder, file, rectangle, agent, partition, card, storage, usecase, stack, interface, entity, boundary, control, note, activityDiamond, activity, class, object, map, state, sequenceDivider, sequenceGroup, sequenceLifeLine, database, actor, participant, collections, queue
+  {
+      BackgroundColor CommonBackgroundColor
+  }
+
+  participant, collections, queue {
+      BackgroundColor FF6F61
+      FontColor White
+      BorderThickness 1.5
+  }
+
+  entity, boundary, control {
+      BackgroundColor FFDA29
+  }
+
+  database {
+      BackgroundColor 98DDDE
+  }
+
+  note {
+      BackgroundColor LightGreen
+  }
+
+  activity {
+      StartColor CommonBorderColor
+      EndColor CommonBorderColor
+  }
+
+  mindmapDiagram, wbsDiagram {
+    node {
+      BackgroundColor CommonBackgroundColor
+    }
+  }
+</style>
+
+'The following skinparams cannot be styled using new styling technique
+
+'Required to syle the border of objects
+skinparam object {
+    BorderColor CommonBorderColor
+}
+
+'Required to style the short form diamond <>
+skinparam class {
+    BorderColor CommonBorderColor
+    BackgroundColor CommonBackgroundColor
+}

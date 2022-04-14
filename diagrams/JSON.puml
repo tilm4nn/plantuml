@@ -1,0 +1,9 @@
+@startjson
+!include ../theme.puml
+
+{
+   "fruit":"Apple",
+   "size": "Large",
+   "color": ["Red", "Green"]
+}
+@endjson
