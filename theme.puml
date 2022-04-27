@@ -1,12 +1,22 @@
+!define ThemeRed FF6F61
+!define ThemeYellow FFDA29
+!define ThemeBlue 98DDDE
+!define ThemeLightGrey E9E9E9
+!define ThemeGrey 595959
+!define ThemeDarkGrey 454545
 !define CommonBackgroundColor White
-!define CommonBorderColor 454645
-!define CommonFontColor 454645
+!define CommonBorderColor ThemeDarkGrey
+!define CommonFontColor ThemeDarkGrey
 
 skinparam BackgroundColor CommonBackgroundColor
 skinparam ArrowColor CommonBorderColor
 skinparam FontColor CommonFontColor
 skinparam shadowing true
 skinparam RoundCorner 7
+skinparam defaulttextalignment center
+
+hide <<external>> stereotype
+hide <<important>> stereotype
 
 skinparam useBetaStyle true
 <style>
@@ -21,18 +31,23 @@ skinparam useBetaStyle true
       BackgroundColor CommonBackgroundColor
   }
 
-  participant, collections, queue {
-      BackgroundColor FF6F61
+  .important {
+      BackgroundColor ThemeRed
       FontColor White
-      BorderThickness 1.5
+      LineThickness 1.5
+  }
+
+  .external {
+     BackgroundColor ThemeLightGrey
+     FontColor ThemeGrey
   }
 
   entity, boundary, control {
-      BackgroundColor FFDA29
+      BackgroundColor ThemeYellow
   }
 
   database {
-      BackgroundColor 98DDDE
+      BackgroundColor ThemeBlue
   }
 
   note {
