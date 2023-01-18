@@ -1,4 +1,16 @@
 = README
 
+[plantuml, target=diagram-classes, format=png]   
+....
+class BlockProcessor
+class DiagramBlock
+class DitaaBlock
+class PlantUmlBlock
+
+BlockProcessor <|-- DiagramBlock
+DiagramBlock <|-- DitaaBlock
+DiagramBlock <|-- PlantUmlBlock
+....
+
 # plantuml
 Snippets and Themes for PlantUML
