@@ -1,26 +1,3 @@
-= README
+= PlantUML
 
-[source, plantuml]
-----
-include::colors.puml
-----
-
-[plantuml, target=diagram-classes, format=png]   
-....
-include::colors.puml
-....
-
-[plantuml, target=diagram-classes, format=png]   
-....
-class BlockProcessor
-class DiagramBlock
-class DitaaBlock
-class PlantUmlBlock
-
-BlockProcessor <|-- DiagramBlock
-DiagramBlock <|-- DitaaBlock
-DiagramBlock <|-- PlantUmlBlock
-....
-
-# plantuml
-Snippets and Themes for PlantUML
+This repository contains snippets and themes for PlantUML
