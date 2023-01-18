@@ -1,5 +1,15 @@
 = README
 
+[source, plantuml]
+----
+include::colors.puml
+----
+
+[plantuml, target=diagram-classes, format=png]   
+....
+include::colors.puml
+....
+
 [plantuml, target=diagram-classes, format=png]   
 ....
 class BlockProcessor
